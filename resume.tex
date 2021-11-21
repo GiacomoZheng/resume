@@ -1,0 +1,80 @@
+% Thank you Sourabh Bajaj for this template.
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \input{glyphtounicode}
+
+\setlength{\footskip}{5pt} % WARNING
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in} % -0.5in
+\addtolength{\evensidemargin}{-0.5in} % -0.5in
+\addtolength{\topmargin}{-0.5in} % -0.5in
+\addtolength{\textwidth}{1in} % 1in
+\addtolength{\textheight}{1.0in} % 1.0in
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\setlist{
+	% topsep=8pt,
+	% itemsep=4pt,
+	% partopsep=4pt,
+	parsep=3pt
+}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\input{commands}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\input{heading}
+
+\section{Education}
+\input{education}
+%-----------EXPERIENCE-----------------
+% \input{experience}
+\section{Academic Activities}
+\input{academic}
+\section{Other Personal Interests Related to Mathematics}
+\input{interests}
+
+
+\end{document}
