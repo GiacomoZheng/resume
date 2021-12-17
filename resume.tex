@@ -5,7 +5,8 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper, 11pt]{article}
+% \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -18,7 +19,10 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-% \input{glyphtounicode}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \input{glyphtounicode.tex}
+% \pdfgentounicode=1
 
 \setlength{\footskip}{5pt} % WARNING
 
@@ -31,7 +35,7 @@
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\topmargin}{-0.5in}
+\addtolength{\topmargin}{-0.25in} % -0.5
 \addtolength{\textwidth}{1in}
 \addtolength{\textheight}{1.0in}
 
@@ -52,9 +56,6 @@
 \titleformat{\section}{
 	\vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
