@@ -6,44 +6,38 @@
 %------------------------
 
 \documentclass[a4paper, 11pt]{article}
+\usepackage[main=english]{babel}
 
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
 \usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
 \usepackage{tabularx}
 
 % Ensure that generate pdf is machine readable/ATS parsable
-% \input{glyphtounicode.tex}
-% \pdfgentounicode=1
+\pdfgentounicode=1
 
-\setlength{\footskip}{5pt} % WARNING
-
+\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\topmargin}{-0.25in} % -0.5
-\addtolength{\textwidth}{1in}
-\addtolength{\textheight}{1.0in}
-
+\usepackage[hidelinks]{hyperref}
 \urlstyle{same}
 
+\usepackage[centering]{geometry}
+\geometry{
+  hmargin=1.2cm,
+  vmargin=1.8cm,
+	% includefoot,
+  footskip=30pt
+}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+\usepackage{enumitem}
 \setlist{
 	% topsep=8pt,
 	% itemsep=4pt,
@@ -52,6 +46,8 @@
 }
 
 % Sections formatting
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{titlesec}
 \titleformat{\section}{
 	\vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
